@@ -23,22 +23,29 @@
       border: 5px solid gold;
       padding: 16px;
       display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+
     }
 
     img {
         width: 90px;
         height: 90px;
         object-fit: contain;
-
-
     }
-    
-    
-    .artigo-autor   
-    </style>
-  
 
-  
+    .artigo-autor {
+       font-weight: bold;
+       }
+       button{
+      cursor: pointer;
+      padding: 8px 12px;
+      font-size: 1rem;
+      margin: 0 4px;
+      }
+    </style>
   </head
 
  <body>
@@ -49,22 +56,28 @@
 
    <main> 
       <img src="image_blog.png" alt="Imagem em estilo de jogo do Roblox onde um avatar usando uma grande coroa dourada e casaco vermelho corre por plataformas coloridas enquanto segura nos braços uma pilha cheia de memes e "brainrots", incluindo o Skibidi Toilet, Pepe the Frog, Doge, Nyan Cat e blocos com o Trollface e a palavra Oof.>
-      <h2>Guia Proficional</h2>
+      <div><h2>Guia Proficional</h2>
       <p>venham aprender passo a passo como ser o rei do "Roube Um Brainrot"</p>
       <p class="artigo-autor">Vitor Guarienti</p>
-      <button><span>0</span></button>
-      <button><span>0</span></button>
+      <button><span>🦈</span></button>
+      <button><span>🪵</span></button> 
+    </div>
+    <img src="Image_blog2.png"
+    
+
     </main>
 </body>
 
 <script>
-const botao = document.querySelectorAll("main button");
-botoes.forEach(function (botao) {
-botao.addEventListener("click", botaoClicado);
+  const botao = document.querySelectorAll("main button");
+    botoes.forEach(function (botao) {
+      botao.addEventListener("click", botaoClicado);
+
 function botaoClicado() {
 console.log("fui clicado");
-let texto = botao.querySelector("span");
+let contador = botao.querySelector("span");
 texto.textContent++;
+contador.textContent = parseInt(contador.textContent) + 1
 }
 })
 
