@@ -62,24 +62,22 @@
       <button><span>🦈</span></button>
       <button><span>🪵</span></button> 
     </div>
-    <img src="Image_blog2.png"
+    <img src="Image_blog2.png"\ alt="Uma ilustração no estilo do jogo Roblox que mostra uma personagem no topo de uma grande pilha de memes da internet ("brainrots"). A personagem veste uma coroa dourada com pedras preciosas, uma capa roxa e tem os braços erguidos em sinal de vitória, com um balão de fala pixelizado que diz "GG! I'm the King!". A pilha inclui elementos como o Skibidi Toilet, a carinha Trollface, a figura roxa Grimace, cães Doge, robôs amarelos ("noobs"), moedas de ouro e caixas de recompensa. Ao fundo, vê-se um cenário colorido em blocos com edifícios e um céu azul pixelizado, juntamente com a interface lateral de jogo do Roblox. class="img-github">
     
 
     </main>
 </body>
 
 <script>
-  const botao = document.querySelectorAll("main button");
+  const botoes = document.querySelectorAll("main button");
     botoes.forEach(function (botao) {
-      botao.addEventListener("click", botaoClicado);
-
-function botaoClicado() {
+      botao.addEventListener("click", function () {
 console.log("fui clicado");
 let contador = botao.querySelector("span");
 texto.textContent++;
 contador.textContent = parseInt(contador.textContent) + 1
-}
-})
+});
+});
 
 </script>
 </html>
